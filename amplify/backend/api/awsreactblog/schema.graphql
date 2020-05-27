@@ -1,0 +1,46 @@
+type Post @model @searchable {
+  id: ID!
+  title: String!
+  content: String!
+  user: User @connection(name: "UserPosts", sortField: "createdAt")
+  author: String!
+  comments: [Comment] @connection(name: "PostComments")
+  createdAt: AWSDateTime
+  likes: [Like] @connection(name: "PostLikes")
+  file: S3Object
+  tags: [String]
+}
+
+type Comment @model {
+  id: ID!
+  content: String!
+  createdAt: AWSDateTime
+  # likes: [Like] @connection(name: "CommentLikes")
+  user: User @connection(name: "UserComments")
+  author: String!
+  post: Post! @connection(name: "PostComments")
+}
+
+type User @model {
+  id: ID!
+  username: String!
+  email: String!
+  registered: Boolean
+  posts: [Post] @connection(name: "UserPosts")
+  comments: [Comment] @connection(name: "UserComments")
+  file: S3Object
+}
+
+type S3Object {
+  bucket: String!
+  region: String!
+  key: String!
+}
+
+type Like @model {
+  id: ID!
+  liker: String!
+  user: User @connection
+  post: Post! @connection(name: "PostLikes")
+  # comment: Comment @connection(name: "CommentLikes")
+}

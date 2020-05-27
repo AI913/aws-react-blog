@@ -1,0 +1,28 @@
+{
+    "awsreact": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-aws-react-blog-awsreact-103406-authRole",
+            "UnauthRoleArn": "arn:aws:iam::831623896959:role/amplify-aws-react-blog-awsreact-103406-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::831623896959:role/amplify-aws-react-blog-awsreact-103406-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-aws-react-blog-awsreact-103406-deployment",
+            "UnauthRoleName": "amplify-aws-react-blog-awsreact-103406-unauthRole",
+            "StackName": "amplify-aws-react-blog-awsreact-103406",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:831623896959:stack/amplify-aws-react-blog-awsreact-103406/3cd59eb0-8370-11ea-877a-0e36924addac",
+            "AmplifyAppId": "d663h2gvnet7d"
+        },
+        "categories": {
+            "auth": {
+                "awsreactblog5488c518": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"545072086192871\",\"client_secret\":\"80af646969a39f64738f5b6d9980dba7\"},{\"ProviderName\":\"Google\",\"client_id\":\"84151497662-dr3dh8dduurpd1cds80qt8k8kir2vv5b.apps.googleusercontent.com\",\"client_secret\":\"HJ76xpxsHcSguUeXNinwPwiT\"}]"
+                }
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d663h2gvnet7d",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}
