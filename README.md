@@ -1,6 +1,6 @@
 ## Live Site
 
-https://aws-blog-app-ai913.netlify.app/
+https://aws-react-blog-ai913.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
